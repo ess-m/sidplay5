@@ -405,7 +405,13 @@
 	rect = self.bounds;
 
 	// Draw background
+    NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:rect xRadius:3.0 yRadius:3.0];
+    [path addClip];
 	NSDrawThreePartImage(rect, leftBackGroundImage, middleBackGroundImage, rightBackGroundImage, NO, NSCompositeSourceOver, 0.8f, NO);
+    
+    
+//    [[NSColor grayColor] set];
+//      NSRectFill([self bounds]);
 	
 	if (logoVisible)
 		logoView.frame = self.bounds;
@@ -429,13 +435,13 @@
 	for (int i = 0; i < 4; i++)
 	{
 		NSImage* image = largeNumberImages[currentTimeDigits[i]];
-		NSRect imageFrame = NSMakeRect(xpos, ypos, image.size.width, image.size.height);
+		NSRect imageFrame = NSMakeRect(xpos, ypos, 10.0f, 19.0f);
 		NSRect imageRect = NSMakeRect(0.0f, 0.0f, image.size.width, image.size.height);
 			
 		[image setFlipped:self.flipped];
 		[image drawInRect:imageFrame fromRect:imageRect operation:NSCompositeSourceOver fraction:1.0f];
 		
-		xpos += image.size.width + 3.0f;
+        xpos += 13.0f;
 		
 		if (i == 1)
 		{
@@ -445,7 +451,7 @@
 			[timeDividerImage setFlipped:self.flipped];
 			[timeDividerImage drawInRect:imageFrame fromRect:imageRect operation:NSCompositeSourceOver fraction:1.0f];
 
-			xpos += image.size.width + 1.0f;
+			xpos += 13.0f;
 		}
 	}
 	
@@ -478,7 +484,7 @@
 		NSRect subtuneBounds = [subtuneInfo boundingRectWithSize:subtuneInfoFrame.size options:0];
 		
 		xpos = rect.size.width - ceilf(NSWidth(subtuneBounds)) - 10.0f - leftWidth - rightWidth;
-		ypos = floorf(rect.origin.y + 29.0f);
+		ypos = floorf(rect.origin.y + 26.0f);
 
 		leftArrowFrame = NSMakeRect(xpos, ypos, leftWidth, leftHeight);
 		NSRect imageRect = NSMakeRect(0.0f, 0.0f, leftWidth, leftHeight);

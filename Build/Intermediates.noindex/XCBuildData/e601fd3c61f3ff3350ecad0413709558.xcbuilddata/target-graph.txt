@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+SIDMusic in sidmdplugin, no dependencies
+resid in SIDPLAY, no dependencies
+SIDPLAY in SIDPLAY, depends on:
+SIDMusic in sidmdplugin (explicit)
+resid in SIDPLAY (explicit)

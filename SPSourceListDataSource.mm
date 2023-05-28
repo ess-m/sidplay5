@@ -65,8 +65,8 @@ static NSString* SPSharedCollectionServiceType = @"_sidmusic._tcp";
 	[rootItems removeAllObjects];
 	
 	// Add the container headers
-	collectionsContainerItem = [self addHeaderItemWithName:@"COLLECTIONS" atIndex:0];
-	playlistsContainerItem = [self addHeaderItemWithName:@"PLAYLISTS" atIndex:1];
+	collectionsContainerItem = [self addHeaderItemWithName:@"Collections" atIndex:0];
+	playlistsContainerItem = [self addHeaderItemWithName:@"Playlists" atIndex:1];
 	sharedCollectionsContainerItem = nil;
 
 	// download mirror list to get up-to-date default mirror

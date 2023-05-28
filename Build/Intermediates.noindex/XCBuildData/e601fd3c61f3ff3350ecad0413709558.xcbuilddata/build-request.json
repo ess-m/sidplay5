@@ -1,0 +1,55 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "cb2f2ed8c3c366e2ae8734416d20631f54ccd73ff59a6499f9d09a4538b4d504"
+    }
+  ],
+  "containerPath" : "/Users/ess/Dev/sidplay5/SIDPLAY.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx13.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/ess/Dev/sidplay5/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/ess/Dev/sidplay5/Build/Products",
+      "derivedDataPath" : "/Users/ess/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/ess/Library/Developer/Xcode/DerivedData/SIDPLAY-auupquyvdhsrmdhairgtnbtpzyyf/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/ess/Library/Developer/Xcode/DerivedData/SIDPLAY-auupquyvdhsrmdhairgtnbtpzyyf/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/ess/Dev/sidplay5/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
